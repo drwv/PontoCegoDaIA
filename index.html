@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Ponto Cego da IA | Portfólio Profissional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        matteBlack: '#121212',
+                        cardBlack: '#1a1a1a',
+                        mintGreen: '#4ADE80',
+                        emeraldBtn: '#10B981',
+                        emeraldDark: '#059669',
+                        lightGray: '#E5E7EB',
+                        mutedGray: '#9CA3AF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10B981;
+        }
+    </style>
+</head>
+<body class="bg-matteBlack text-lightGray font-sans antialiased selection:bg-emeraldBtn selection:text-matteBlack">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-matteBlack/80 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2 group">
+                <div class="w-10 h-10 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-105 transition-transform">
+                    <i data-lucide="cpu" class="w-5 h-5 text-mintGreen"></i>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white">Ponto Cego <span class="text-mintGreen">da IA</span></span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-mintGreen transition-colors">Início</a>
+                <a href="#mito" class="hover:text-mintGreen transition-colors">O Mito</a>
+                <a href="#seguranca" class="hover:text-mintGreen transition-colors">Segurança</a>
+                <a href="#avancado" class="hover:text-mintGreen transition-colors">Estratégias</a>
+                <a href="#cta" class="bg-emeraldBtn hover:bg-emeraldDark text-matteBlack font-semibold px-4 py-2 rounded-xl transition-all shadow-lg shadow-emeraldBtn/20 flex items-center gap-2">
+                    <span>Praticar</span>
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBlack border-b border-white/10 px-6 py-4 space-y-3">
+            <a href="#hero" class="block py-2 hover:text-mintGreen transition-colors">Início</a>
+            <a href="#mito" class="block py-2 hover:text-mintGreen transition-colors">O Mito</a>
+            <a href="#seguranca" class="block py-2 hover:text-mintGreen transition-colors">Segurança</a>
+            <a href="#avancado" class="block py-2 hover:text-mintGreen transition-colors">Estratégias</a>
+            <a href="#cta" class="block py-2 text-mintGreen font-semibold">Experimentar Gemini</a>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        
+        <section id="hero" class="min-h-screen pt-28 pb-16 flex items-center relative">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-950/20 via-matteBlack to-matteBlack pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="space-y-6 text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emeraldBtn/10 border border-emeraldBtn/30 text-mintGreen text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i>
+                        <span>Portfólio Profissional de IA</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-mintGreen tracking-tight leading-tight">
+                        O Ponto Cego da IA
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-white font-medium">
+                        O que as pesquisas rápidas não te ensinam sobre o uso profissional, seguro e preciso da Inteligência Artificial.
+                    </p>
+                    <p class="text-mutedGray text-base sm:text-lg leading-relaxed">
+                        Usar IA é fácil. Dominar a IA exige estratégia. Descubra os fundamentos práticos que transformam simples perguntas em fluxos de trabalho avançados.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#mito" class="bg-emeraldBtn hover:bg-emeraldDark text-matteBlack font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldBtn/25 flex items-center gap-2 group">
+                            <span>Explores os Fundamentos</span>
+                            <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+                        </a>
+                        <a href="#cta" class="border border-white/20 hover:border-mintGreen text-white hover:text-mintGreen font-semibold px-6 py-3.5 rounded-xl transition-all flex items-center gap-2">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-mintGreen"></i>
+                            <span>Ir para a Prática</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emeraldBtn to-mintGreen rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-cardBlack aspect-video lg:aspect-square flex items-center justify-center">
+                        <!-- Imagem de pessoas colaborando em um computador (Hero) -->
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Profissionais colaborando em equipe com computador" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/800x800/1a1a1a/4ADE80?text=Teamwork+AI'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-matteBlack/80 via-transparent to-transparent flex items-end p-6">
+                            <div class="bg-matteBlack/90 backdrop-blur-md p-4 rounded-xl border border-white/10 w-full flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emeraldBtn/20 flex items-center justify-center text-mintGreen shrink-0">
+                                    <i data-lucide="users" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white text-sm font-semibold">Trabalho em Equipe & Estratégia</h4>
+                                    <p class="text-mutedGray text-xs">Colaboração humana impulsionada por IA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mito" class="py-24 bg-cardBlack/50 relative border-t border-b border-white/5">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-mintGreen font-semibold text-sm uppercase tracking-wider">Análise de Custo & Benefício</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">O Mito do Custo</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Card de texto em destaque -->
+                    <div class="relative rounded-2xl p-8 sm:p-10 border border-emeraldBtn/40 bg-cardBlack shadow-2xl overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-emeraldBtn/5 rounded-full blur-3xl pointer-events-none"></div>
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen mb-6">
+                                <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Você não precisa pagar para começar a entender.</h3>
+                            <p class="text-lightGray leading-relaxed text-base">
+                                O maior mito sobre a Inteligência Artificial é que você precisa de uma assinatura premium para aprender como ela funciona de verdade. <strong class="text-mintGreen">Não precisa.</strong>
+                            </p>
+                            <p class="text-mutedGray text-sm leading-relaxed">
+                                As ferramentas gratuitas são tudo o que você necessita para dominar a lógica, estruturar comandos e aplicar a IA no dia a dia. Investir em versões pagas é um passo importante, mas apenas quando você quiser escalar grandes projetos corporativos ou processar volumes massivos de dados. O fundamento é gratuito.
+                            </p>
+                            <div class="pt-4">
+                                <a href="#cta" class="inline-flex items-center gap-2 bg-emeraldBtn hover:bg-emeraldDark text-matteBlack font-semibold px-5 py-2.5 rounded-xl transition-all text-sm shadow-md shadow-emeraldBtn/20">
+                                    <span>Explore os Fundamentos</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagem complementar amigável -->
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-xl group aspect-video lg:aspect-auto h-full min-h-[320px]">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80" alt="Pessoas estudando e utilizando computadores juntas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/800x600/1a1a1a/4ADE80?text=Free+Learning'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-matteBlack/90 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-sm font-medium">Acessibilidade tecnológica para todos os profissionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-mintGreen font-semibold text-sm uppercase tracking-wider">Governança & Boas Práticas</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-mintGreen mt-2">Segurança em Primeiro Lugar</h2>
+                    <p class="text-mutedGray mt-4">A inteligência não substitui a prudência. Regras inegociáveis para o uso ético e seguro no trabalho.</p>
+                </div>
+                
+                <!-- Imagem central de destaque para IA Responsável -->
+                <div class="mb-16 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative h-64 sm:h-80">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" alt="Reunião de equipe analisando dados com segurança e computadores" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-matteBlack/40 to-transparent flex items-end p-8">
+                        <div>
+                            <span class="text-mintGreen text-xs font-semibold uppercase tracking-widest bg-emeraldBtn/10 px-3 py-1 rounded-full border border-emeraldBtn/30">Ambiente Controlado</span>
+                            <h3 class="text-white text-xl font-bold mt-2">Proteção e Supervisão em Cada Etapa</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Card 1 -->
+                    <div class="bg-cardBlack p-8 rounded-2xl border border-white/10 hover:border-emeraldBtn/50 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-110 transition-transform">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Proteção de Dados</h3>
+                            <p class="text-mutedGray text-sm sm:text-base leading-relaxed">
+                                Nunca compartilhe informações confidenciais, dados de clientes ou segredos de negócios nos prompts. Mantenha a conformidade com as diretrizes corporativas de privacidade.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-mintGreen text-xs font-semibold">
+                            <i data-lucide="lock" class="w-4 h-4 mr-1.5"></i>
+                            <span>Sigilo Absoluto</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-cardBlack p-8 rounded-2xl border border-white/10 hover:border-emeraldBtn/50 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-110 transition-transform">
+                                <i data-lucide="user-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Supervisão Humana</h3>
+                            <p class="text-mutedGray text-sm sm:text-base leading-relaxed">
+                                A IA é uma assistente, não a tomadora de decisões. Cheque os fatos e supervisione os resultados para garantir precisão e evitar "alucinações" do sistema.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-mintGreen text-xs font-semibold">
+                            <i data-lucide="eye" class="w-4 h-4 mr-1.5"></i>
+                            <span>Validação Ativa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avancado" class="py-24 bg-cardBlack/40 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-mintGreen font-semibold text-sm uppercase tracking-wider">Evolução Técnica</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-mintGreen mt-2">O que está no Ponto Cego?</h2>
+                    <p class="text-mutedGray mt-4">Vá além da pergunta única. Conheça as técnicas que separam o uso amador do profissional.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Column 1 -->
+                    <div class="bg-cardBlack p-8 rounded-2xl border border-white/10 hover:border-emeraldBtn/50 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-110 transition-transform">
+                                <i data-lucide="git-merge" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Encadeamento de Prompts</h3>
+                            <p class="text-mutedGray text-sm sm:text-base leading-relaxed">
+                                Em vez de pedir tudo de uma vez, crie fluxos. Use a resposta anterior para guiar a próxima tarefa, construindo soluções complexas passo a passo.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-white/5 text-xs text-mintGreen font-semibold flex items-center gap-1">
+                            <span>Nível 01</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="bg-cardBlack p-8 rounded-2xl border border-white/10 hover:border-emeraldBtn/50 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-110 transition-transform">
+                                <i data-lucide="layers" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Multimodalidade</h3>
+                            <p class="text-mutedGray text-sm sm:text-base leading-relaxed">
+                                O contexto não vive só de texto. Combine imagens, planilhas e documentos para dar uma visão completa do cenário à IA.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-white/5 text-xs text-mintGreen font-semibold flex items-center gap-1">
+                            <span>Nível 02</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="bg-cardBlack p-8 rounded-2xl border border-white/10 hover:border-emeraldBtn/50 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emeraldBtn/10 border border-emeraldBtn/30 flex items-center justify-center text-mintGreen group-hover:scale-110 transition-transform">
+                                <i data-lucide="bot" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Agentes Autônomos</h3>
+                            <p class="text-mutedGray text-sm sm:text-base leading-relaxed">
+                                Sistemas que executam múltiplas etapas sozinhos para atingir um objetivo. Poderosos, mas exigem sua supervisão ativa para não saírem do trilho.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-white/5 text-xs text-mintGreen font-semibold flex items-center gap-1">
+                            <span>Nível 03</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-32 bg-matteBlack text-center relative overflow-hidden border-t border-white/10">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-900/10 via-matteBlack to-matteBlack pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-6 relative z-10 space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emeraldBtn/10 border border-emeraldBtn/30 text-mintGreen text-xs font-semibold uppercase tracking-wider">
+                    <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+                    <span>Aplicação Prática</span>
+                </div>
+                <h2 class="text-4xl sm:text-6xl font-black text-mintGreen tracking-tight">
+                    VAMOS PRATICAR?
+                </h2>
+                <p class="text-lightGray text-lg sm:text-xl max-w-xl mx-auto font-normal">
+                    A melhor forma de entender o Ponto Cego é testando na prática, agora mesmo.
+                </p>
+                <div class="pt-4">
+                    <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-emeraldBtn hover:bg-emeraldDark text-matteBlack font-extrabold text-lg px-8 py-4 rounded-2xl transition-all shadow-xl shadow-emeraldBtn/30 hover:scale-105 duration-200">
+                        <span class="text-2xl">✨</span>
+                        <span>Experimente o Gemini Agora</span>
+                        <i data-lucide="external-link" class="w-5 h-5 ml-1"></i>
+                    </a>
+                </div>
+                <p class="text-mutedGray text-xs pt-4">
+                    Link oficial seguro para a plataforma Google Gemini.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-cardBlack border-t border-white/10 py-12 text-center text-mutedGray text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-white">O Ponto Cego da IA</span>
+                <span>— Portfólio Profissional</span>
+            </div>
+            <p>© 2026 • Criado para o LinkedIn com foco em excelência e inovação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar blur on scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-matteBlack/95', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-matteBlack/95', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
